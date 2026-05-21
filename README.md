@@ -1,46 +1,41 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-
-
 # Point of Sale (POS) System
 
 This is a Laravel-based Point of Sale (POS) system application. It allows for managing products, categories, transactions, and user roles. The system includes a builder for creating custom product bundles and a POS interface for processing sales.
 
-## Running with Docker
+## Getting Started
 
-To run this project using Docker, follow these steps:
+To run this project locally, ensure you have PHP, Composer, and Node.js installed on your machine.
 
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/your-username/pos-system-laravel.git
-    cd pos-system-laravel
+    cd pos-system-laravel/rigmanager
     ```
-2.  **Create a .env file:**
-    Copy the `.env.example` file to `.env` in the `rigmanager` directory and update the database credentials if necessary.
+2.  **Install PHP dependencies:**
     ```bash
-    cp rigmanager/.env.example rigmanager/.env
+    composer install
     ```
-3.  **Build and run Docker containers:**
+3.  **Install Node.js dependencies:**
     ```bash
-    docker-compose up --build -d
+    npm install
     ```
-4.  **Install Composer dependencies:**
+4.  **Create a .env file:**
+    Copy the `.env.example` file to `.env` and configure your database settings.
     ```bash
-    docker-compose exec app composer install
+    cp .env.example .env
+    php artisan key:generate
     ```
-5.  **Generate application key:**
+5.  **Run the application:**
+    Open two terminals in the `rigmanager` directory and run the following commands:
+    
+    Terminal 1 (Serve):
     ```bash
-    docker-compose exec app php artisan key:generate
+    php artisan serve
     ```
-6.  **Run database migrations and seeders:**
+    
+    Terminal 2 (Assets):
     ```bash
-    docker-compose exec app php artisan migrate --seed
+    npm run dev
     ```
-7.  **Install NPM dependencies and build assets:**
-    ```bash
-    docker-compose exec app npm install
-    docker-compose exec app npm run build
-    ```
-8.  **Access the application:**
-    The application should now be accessible in your web browser at `http://localhost`.
-
+6.  **Access the application:**
+    The application should now be accessible in your web browser at `http://127.0.0.1:8000`.
