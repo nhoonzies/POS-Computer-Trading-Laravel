@@ -39,3 +39,14 @@ To run this project locally, ensure you have PHP, Composer, and Node.js installe
     ```
 6.  **Access the application:**
     The application should now be accessible in your web browser at `http://127.0.0.1:8000`.
+
+ ## UI
+
+ <img width="1680" height="680" alt="image" src="https://github.com/user-attachments/assets/02622aa7-0640-417b-ae42-e011fd9961a1" />
+ <img width="1322" height="866" alt="image" src="https://github.com/user-attachments/assets/93c8fa02-242c-49e8-aa9c-c3f5c619fe21" />
+ <img width="1360" height="688" alt="image" src="https://github.com/user-attachments/assets/6a29df8c-3c9f-43ee-b43c-3e0d638809ff" />
+ <img width="1177" height="612" alt="image" src="https://github.com/user-attachments/assets/521d4370-2a83-4a49-a1ca-94ae814ca728" />
+
+
+
+
